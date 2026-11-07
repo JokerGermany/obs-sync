@@ -1,0 +1,19 @@
+# owner/repo                 | license                     | .deb asset regex          | upstream checksums
+# Licenses other than LightCraft/SchildiChat are ASSUMED - verify before publishing.
+storytold/lightcraft         | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/pdfcraft           | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/filmcraft          | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/texturecraft       | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/designcraft        | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/wordcraft          | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/vectorcraft        | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/cadcraft           | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/deckcraft          | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/photocraft         | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/effectcraft        | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/figcraft           | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/gridcraft          | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/soundcraft         | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+storytold/artcraft           | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+tangency-labs/solidcraft     | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
+SchildiChat/schildi-revenge  | GPL-3.0-only      | amd64\.deb$         | optional
