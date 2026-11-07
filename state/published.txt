@@ -1,1 +1,2 @@
 SchildiChat/schildi-revenge v26.10.26 26.10.26-1obs1 2026-11-07
+storytold/lightcraft v0.19.0 0.19.0-1obs1 2026-11-07
