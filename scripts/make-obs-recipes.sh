@@ -74,7 +74,11 @@ $LONG
 %install
 mkdir -p %{buildroot}
 cp -a . %{buildroot}/
-( cd %{buildroot} && find . \\( -type f -o -type l \\) | sed -e 's|^\\.||' -e 's|%|%%|g' -e 's|^|"|' -e 's|\$|"|' ) > files.list
+( cd %{buildroot} && find . \\( -type f -o -type l \\) | sed -e 's|^\\.||' -e 's|%|%%%%|g' -e 's|^|"|' -e 's|\$|"|' ) > files.list
+# own the package's directories, except standard system directories (openSUSE checks ownership)
+( cd %{buildroot} && find . -mindepth 1 -type d | sed -e 's|^\\.||' \\
+  | grep -Ev '^/(etc|opt|usr|usr/(bin|sbin|lib|lib64|libexec|share)|usr/share/(applications|icons|doc|licenses|man|man/man[0-9]|pixmaps|metainfo|mime|mime/packages))\$' \\
+  | sed -e 's|%|%%%%|g' -e 's|^|%%dir "|' -e 's|\$|"|' ) >> files.list
 
 %files -f files.list
 EOF
