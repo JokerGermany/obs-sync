@@ -50,7 +50,7 @@ obs_upload() {  # $1 = package, $2 = dir, $3 = comment
     obs -X PUT -d "<package name=\"$pkg\" project=\"$OBS_PROJECT\"><title>$pkg</title><description>Unofficial repackage of upstream release files.</description></package>" \
       "/source/$OBS_PROJECT/$pkg/_meta" >/dev/null || return 1
   fi
-  old="$(obs "/source/$OBS_PROJECT/$pkg" | grep -o 'name="[^"]*"' | cut -d'"' -f2)"
+  old="$(obs "/source/$OBS_PROJECT/$pkg" | grep -o '<entry name="[^"]*"' | cut -d'"' -f2)"
   for f in "$dir"/*; do
     echo "  upload $(basename "$f")"
     obs -X PUT -f "$f" "/source/$OBS_PROJECT/$pkg/$(basename "$f")?comment=$c" >/dev/null || return 1
