@@ -17,3 +17,4 @@
 # storytold/artcraft           | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
 # tangency-labs/solidcraft     | MIT OR Apache-2.0 | -linux-x86_64\.deb$ | required
 SchildiChat/schildi-revenge  | GPL-3.0-only      | amd64\.deb$         | optional
+rustdesk/rustdesk            | AGPL-3.0-only     | x86_64\.deb$        | optional
