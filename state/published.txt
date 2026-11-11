@@ -16,3 +16,4 @@ storytold/soundcraft v0.18.0 0.18.0-1obs1 2026-11-07
 storytold/artcraft artcraft-v0.41.1 0.41.1-1obs1 2026-11-07
 tangency-labs/solidcraft v0.30.1 0.30.1-1obs1 2026-11-07
 rustdesk/rustdesk 1.5.1 1.5.1-1obs1 2026-11-09
+rustdesk/rustdesk 1.5.3 1.5.3-1obs1 2026-11-11
